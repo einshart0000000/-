@@ -1,0 +1,102 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/* commoon =============================================================================== */
+*{margin: 0; padding: 0;}
+a{text-decoration: none;}
+li{list-style: none;}
+img{max-width: 100%;}
+button{background: none; border:0; cursor: pointer;}
+html, body{height: 100%;}
+body{font-family: 'Nanum Gothic', sans-serif;}
+.skip{font-size: 0;text-indent: -99999px;position: absolute;left: -99999px;}
+.center{width:900px; margin:auto; position: relative; overflow: hidden;}
+::selection{background: #fcc314;}
+
+/* header =============================================================================== */
+header{height: 180px; position: relative; z-index: 1000;}
+header .center{overflow: initial;}
+header h1{padding: 35px 0 0 10px;}
+header nav.gnb-nav{position: absolute; right:0; top:80px;}
+header nav.gnb-nav > ul{position: relative; z-index: 2;}
+header nav.gnb-nav > ul > li{float: left; width: 185px;}
+header nav.gnb-nav > ul > li > a{display: block; font-size: 18px; color:#295ba7; font-weight: bold; text-align: center; line-height: 50px;  height: 50px; border-bottom:6px solid #fff; box-sizing: border-box;}
+header nav.gnb-nav > ul > li.active > a,
+header nav.gnb-nav > ul > li:hover > a{border-bottom:6px solid #295ba7;}
+header nav.gnb-nav ul li ul{display: none; margin-top: 8px;}
+header nav.gnb-nav ul li ul li{line-height: 22px;}
+header nav.gnb-nav ul li ul li a{display: block; font-size: 16px; color:#295ba7; font-weight: bold; text-align: center;}
+header nav.gnb-nav ul li ul li a:hover{text-decoration: underline;}
+header nav.gnb-nav .sub-bg{display: none; position: absolute; top:50px; z-index: 1; width: 740px; height: 150px; border:2px solid #295ba7; box-sizing: border-box; background: #fff;}
+
+header .etc{position: absolute; right:0; top:10px;}
+header .etc a{display: inline-block; width:22px; height: 22px; font-size: 22px; color:#295ba7;}
+header .etc a:hover{color:#80a0d0;}
+header .etc form{display: none; position: absolute; right:0; top:40px;}
+header .etc form input[type=text]{width: 375px; height: 40px; background:#295ba7; color:#fff; font-size: 16px; padding: 0 40px 0 15px; box-sizing: border-box; border:0;}
+header .etc form input::-webkit-input-placeholder{color:#fff;}
+header .etc form button{position:absolute; right:10px; top:10px; font-size: 22px; color:#fff;}
+
+/* section ============================================================================== */
+/* main-slide */
+.main-slide{margin-bottom: 40px;}
+.main-slide .swiper-slide button{
+  position: absolute; bottom:50px; left:50%; transform: translateX(-50%);
+  width: 200px; height: 60px; background:#fcc314; color:#fff; font-size: 22px; font-weight: bold;
+}
+.main-slide .swiper-slide button:hover{background: #94ac3c;}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next,
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{background-image: none;}
+.swiper-button-next i, .swiper-button-prev i{font-size: 40px; color:#fff;}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{right:20px;}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{left:20px;}
+
+.category{background: #295ba7; padding: 20px 0;}
+.category .center{width: 940px;}
+.category ul{overflow: hidden;}
+.category .center > ul > li{float: left; width: 20%; }
+.category ul > li h2{text-align: center; color:#fcc314; font-size: 20px; line-height: 40px; border-bottom:5px solid #fcc314; margin: 0 8px 20px;}
+.category ul > li ul{padding-left: 20px;}
+.category ul > li ul li{}
+.category ul > li ul li a{font-size: 18px; line-height: 48px;color:#fcc314; text-align: left;}
+
+.map{overflow: hidden; width: 940px; margin-bottom: 50px;}
+.map h2{padding: 60px 0 20px 20px; color:#94ac3c; font-size: 24px;}
+.map .box{float: left; width: 370px; height: 320px; background: #94ac3c; color:#fff; padding: 40px 0 0 40px; box-sizing: border-box; margin-left: 20px;}
+.map .box h3{font-size: 30px; padding-bottom: 25px;line-height: 22px; height: 30px;}
+.map .box p{font-size: 18px;}
+.map .area{float: right;}
+
+section .notice{padding-top: 40px; padding-bottom: 40px; width: 900px;}
+section .notice .not{height: 50px; border: 3px solid #295ba7;}
+section .notice .not p{float: left; color: #295ba7; font-size: 16px; font-weight: bold;}
+section .notice .not .not1{margin: 14px 20px;}
+section .notice .not .not2{float: right; position: relative; bottom: 19px; right: 20px;}
+section .notice .notice-rol{height: 20px; width: 330px; overflow: hidden; padding-top: 14px;}
+section .notice .notice-rol li{}
+section .notice .notice-rol li a{color: #295ba7; font-weight: bold;}
+section .notice .notice-rol li a:hover{text-decoration: underline;}
+section .notice .not p a{padding: 0 5px; color: #295ba7;}
+
+.player{position: relative; height: 500px; background: #295ba7;}
+.player .center{overflow: hidden;}
+.player h2{padding-top: 60px; color: #fff; padding-bottom: 20px;}
+.player .play-wrap{float: left; width: 440px; height: 300px;}
+.player .play-wrap.left{margin-right: 20px;}
+.player .play-wrap iframe{width: 100%; height: 100%;}
+/* footer ============================================================================== */
+footer{background: #eeeeee; height: 400px;}
+footer .drop-down-area{position: relative; width: 440px; margin: auto; margin-top: 70px;}
+footer .drop-down-area::after{content: ''; display: block; clear: both;}
+footer .drop-down-area .drop-down{position: relative; float: left; width: 200px; border:4px solid #295ba7; box-sizing: border-box; margin: 0 10px;}
+footer .drop-down-area .drop-down > a{display: block; font-size: 16px; color:#295ba7; height: 50px; line-height: 50px; text-align: center;
+background: url(../images/select-icon.png) no-repeat right;}
+footer .drop-down-area .drop-down ul{display: none; position: absolute; left: -4px; border:4px solid #295ba7; width: 100%;}
+footer .drop-down-area .drop-down ul li{}
+footer .drop-down-area .drop-down ul li a{display: block;text-align: center;line-height: 30px;color: #295ba7;background: #fff;}
+footer .drop-down-area .drop-down ul li a:hover{text-decoration: underline;}
+footer .center{text-align: center; width: 100%; height: 400px;}
+footer .fot-nav{color: #295ba7;}
+footer .fot-nav li{margin-top: 30px; display: inline-block; padding: 10px 5px;}
+footer .fot-nav li a{color: #296ba7;}
+footer p{padding-top: 30px; padding-bottom: 30px; color: #295ba7;}
+footer small{color: #295ba7; font-weight: bold;}
